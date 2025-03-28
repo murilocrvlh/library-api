@@ -1,0 +1,15 @@
+/mvnw text eol=lf
+*.cmd text eol=crlf
+target/
+bin/
+*.class
+.idea/
+.vscode/
+*.iml
+.classpath
+.project
+.settings/
+
+*.log
+.DS_Store
+Thumbs.db
