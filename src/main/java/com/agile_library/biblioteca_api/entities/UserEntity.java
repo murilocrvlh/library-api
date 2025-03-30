@@ -10,6 +10,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.UUID;
 
 @Entity(name = "tb_users")
 @Table(name = "tb_users")
@@ -22,7 +23,7 @@ public class UserEntity implements UserDetails {
     @Id
     @Column(unique = true, nullable = false)
     @GeneratedValue(strategy = GenerationType.UUID)
-    private String id;
+    private UUID id;
 
     @Column(nullable = false)
     private String name;
